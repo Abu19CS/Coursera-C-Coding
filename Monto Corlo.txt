@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define NHands 10000000000
+
+
+int main() 
+{
+   int NRoyal=0, NStraightFlush=0, N4s=0, FullHouse=0, Flush=0, ThofKind=0, TofKind=0,  Pair=0, hiorle=0;
+   for ( i = 1; i <= NHands; i++ )
+   {
+      if ( NHands == 4324 )
+         NRoyal++;
+      else if ( NHands == 37260 )
+         NStraightFlush++;
+      else if ( NHands == 224848)
+         N4s++;
+      else if ( NHands == 3473184)
+         FullHouse++;
+      else if ( NHands == 4047644)
+	 Flush++;
+      else if (NHands == 6180020)
+	 Straight++;
+      else if (NHands == 6461620)
+	 ThofKind++;
+      else if (NHands == 31433400)
+	 TofKind++;
+      else if (NHands == 58627800)
+    	 Pair++;
+      else if (NHands == 23294460)
+	 hiorle++;
+   }
+   printf("Probability of Royal Flush = ", (double)NRoyal / NHands);
+   return 0;
+}
